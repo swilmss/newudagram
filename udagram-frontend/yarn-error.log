@@ -1,0 +1,94 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\lol\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\lol\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\lol\bin;C:\Program Files\Python39\Scripts;C:\Program Files\Python39;C:\Python310\Scripts;C:\Python310;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\PostgreSQL\12\bin;C:\Program Files\PostgreSQL\12\lib;C:\Program Files\nodejs;C:\Program Files\dotnet;C:\Windows\system32\config\systemprofile\AppData\Local\Programs\Python\Python39\Scripts;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Amazon\AWSCLIV2\aws.exe;C:\Users\lol\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lol\AppData\Roaming\npm;C:\Program Files\Amazon\AWSCLIV2\aws.exe;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.18.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/rxjs/-/rxjs-6.5.5.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\lol\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141510:19)
+      at Object.onceWrapper (events.js:519:28)
+      at ClientRequest.emit (events.js:400:28)
+      at TLSSocket.emitRequestTimeout (_http_client.js:790:9)
+      at Object.onceWrapper (events.js:519:28)
+      at TLSSocket.emit (events.js:412:35)
+      at TLSSocket.Socket._onTimeout (net.js:495:8)
+      at listOnTimeout (internal/timers.js:557:17)
+      at processTimers (internal/timers.js:500:7)
+
+npm manifest: 
+  {
+    "name": "udagram-frontend",
+    "version": "0.0.1",
+    "author": "Ionic Framework",
+    "homepage": "https://ionicframework.com/",
+    "scripts": {
+      "ng": "ng",
+      "start": "ng serve",
+      "build": "ng build",
+      "test": "ng test",
+      "lint": "ng lint",
+      "e2e": "ng e2e"
+    },
+    "private": true,
+    "dependencies": {
+      "@angular/common": "^8.2.14",
+      "@angular/core": "^8.2.14",
+      "@angular/forms": "^8.2.14",
+      "@angular/http": "^7.2.2",
+      "@angular/platform-browser": "^8.2.14",
+      "@angular/platform-browser-dynamic": "^8.2.14",
+      "@angular/router": "^8.2.14",
+      "@ionic-native/core": "^5.0.0",
+      "@ionic-native/splash-screen": "^5.0.0",
+      "@ionic-native/status-bar": "^5.0.0",
+      "@ionic/angular": "^4.1.0",
+      "core-js": "^2.5.4",
+      "rxjs": "~6.5.4",
+      "zone.js": "~0.9.1"
+    },
+    "devDependencies": {
+      "@angular-devkit/architect": "~0.12.3",
+      "@angular-devkit/build-angular": "^0.803.24",
+      "@angular-devkit/core": "~7.2.3",
+      "@angular-devkit/schematics": "~7.2.3",
+      "@angular/cli": "~8.3.25",
+      "@angular/compiler": "~8.2.14",
+      "@angular/compiler-cli": "~8.2.14",
+      "@angular/language-service": "~8.2.14",
+      "@ionic/angular-toolkit": "~1.4.0",
+      "@types/jasmine": "~2.8.8",
+      "@types/jasminewd2": "~2.0.3",
+      "@types/node": "~10.12.0",
+      "@typescript-eslint/eslint-plugin": "^2.20.0",
+      "@typescript-eslint/parser": "^2.20.0",
+      "codelyzer": "~4.5.0",
+      "jasmine-core": "~2.99.1",
+      "jasmine-spec-reporter": "~4.2.1",
+      "karma": "~3.1.4",
+      "karma-chrome-launcher": "~2.2.0",
+      "karma-coverage-istanbul-reporter": "~2.0.1",
+      "karma-jasmine": "~1.1.2",
+      "karma-jasmine-html-reporter": "^0.2.2",
+      "protractor": "~5.4.0",
+      "ts-node": "~8.0.0",
+      "tslint": "~5.12.0",
+      "typescript": "^3.5.3"
+    },
+    "description": "An Ionic project"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

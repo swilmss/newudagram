@@ -1,0 +1,85 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\lol\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\lol\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\lol\bin;C:\Program Files\Python39\Scripts;C:\Program Files\Python39;C:\Python310\Scripts;C:\Python310;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\PostgreSQL\12\bin;C:\Program Files\PostgreSQL\12\lib;C:\Program Files\nodejs;C:\Program Files\dotnet;C:\Windows\system32\config\systemprofile\AppData\Local\Programs\Python\Python39\Scripts;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Amazon\AWSCLIV2\aws.exe;C:\Users\lol\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lol\AppData\Roaming\npm;C:\Program Files\Amazon\AWSCLIV2\aws.exe;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.18.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\lol\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141510:19)
+      at Object.onceWrapper (events.js:519:28)
+      at ClientRequest.emit (events.js:400:28)
+      at TLSSocket.emitRequestTimeout (_http_client.js:790:9)
+      at Object.onceWrapper (events.js:519:28)
+      at TLSSocket.emit (events.js:412:35)
+      at TLSSocket.Socket._onTimeout (net.js:495:8)
+      at listOnTimeout (internal/timers.js:557:17)
+      at processTimers (internal/timers.js:500:7)
+
+npm manifest: 
+  {
+    "name": "udagram-api",
+    "version": "2.0.0",
+    "description": "",
+    "main": "src/server.js",
+    "scripts": {
+      "start": "node .",
+      "tsc": "tsc",
+      "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts",
+      "prod": "tsc && node ./www/server.js",
+      "clean": "rm -rf www/ || true",
+      "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Gabriel Ruttner",
+    "license": "ISC",
+    "dependencies": {
+      "@types/bcrypt": "^3.0.0",
+      "@types/jsonwebtoken": "^8.3.2",
+      "aws-sdk": "^2.429.0",
+      "bcrypt": "^5.0.1",
+      "body-parser": "^1.18.3",
+      "cors": "^2.8.5",
+      "dotenv": "^8.2.0",
+      "email-validator": "^2.0.4",
+      "express": "^4.16.4",
+      "jsonwebtoken": "^8.5.1",
+      "pg": "^8.7.1",
+      "reflect-metadata": "^0.1.13",
+      "sequelize": "^5.21.4",
+      "sequelize-typescript": "^0.6.9"
+    },
+    "devDependencies": {
+      "@types/bluebird": "^3.5.26",
+      "@types/cors": "^2.8.6",
+      "@types/express": "^4.16.1",
+      "@types/node": "^11.11.6",
+      "@types/sequelize": "^4.27.44",
+      "@types/validator": "^10.9.0",
+      "@typescript-eslint/eslint-plugin": "^2.19.2",
+      "@typescript-eslint/parser": "^2.19.2",
+      "chai": "^4.2.0",
+      "chai-http": "^4.2.1",
+      "eslint": "^6.8.0",
+      "eslint-config-google": "^0.14.0",
+      "mocha": "^6.1.4",
+      "ts-node-dev": "^1.0.0-pre.32",
+      "typescript": "^3.3.4000"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
