@@ -43,3 +43,11 @@ jobs:
           name: backend Deploy 
           command: |
             npm run backend:deploy
+workflows:
+  udacity-udagram-circleci:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
